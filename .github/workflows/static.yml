@@ -28,12 +28,14 @@ jobs:
         run: npm install
       - name: Build CSS
         run: npm run build
+      - name: Copy CSS into src
+        run: cp -r dist src/dist
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './src'
 
   deploy:
     environment:
