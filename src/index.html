@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <!--=================================== Google Fonts =========================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Montserrat:wght@600&family=Rubik+Wet+Paint&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&display=swap" rel="stylesheet">
+    <!--=================================== Google Fonts =========================-->
+    <link href="../dist/styles.css" rel="stylesheet">
+    <title>HeadPhone</title>
+
+
+    <style>
+            :root {
+            --font-montserrat: "Montserrat", sans-serif;
+            --font-rubik-wet-paint: "Rubik Wet Paint", system-ui;
+            --font-satisfy: "Satisfy", cursive;
+            --font-indie-flower: "Indie Flower", cursive;
+            --font-acme: "Acme", sans-serif;
+
+            --font-nosifer: "Nosifer", sans-serif;
+            --font-eater: "Eater", serif;
+            --font-metal-mania: "Metal Mania", system-ui;
+            --sniglet: "Sniglet", system-ui;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+
+
+</head>
+
+<body class="hero-bg">
+<div class="relative">
+    <header id="nav" class="fixed top-0 left-0 z-50 w-full transition-all duration-500 ease-in-out pt-1 pb-3">
+    <nav class="flex items-center justify-between px-14 pt-2">
+
+        <div class="pt-2"> 
+            <img src="../images/logo.png" alt="" width="40">
+        </div>
+
+
+        <!-- DeskTop Links -->
+        <div>
+            <ul class="hidden lg:flex items-center gap-6">
+                <li><a class="text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#home">Home</a></li>
+                <li><a class="text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#specs">Specs</a></li>
+                <li><a class="text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#case">Case</a></li>
+                <li><a class="text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#products">Products</a></li>
+            </ul>
+        </div>
+
+
+
+        <!-- Hamburger -->
+        <div id="hamburger" class="text-3xl text-white z-50 cursor-pointer lg:hidden flex">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+
+
+
+        <!-- Mobile Links -->
+        <div id="menu" class="fixed top-0 left-0 w-full z-40 bg-black -translate-y-full h-72 transition-all duration-500 ease-in-out ">
+            <ul class="lg:hidden flex flex-col gap-6 pl-5 pt-4">
+                <li><a class="link text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#home">Home</a></li>
+                <li><a class="link text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#specs">Specs</a></li>
+                <li><a class="link text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#case">Case</a></li>
+                <li><a class="link text-xl text-gray-500 inline-block hover:-translate-y-1.5 hover:text-gray-200 transition-all duration-200 ease-in-out font-medium" style="font-family: var(--sniglet);" href="#products">Products</a></li>
+            </ul>
+        </div>
+
+
+
+    </nav>
+</header>
+
+<!-- Home -->
+<section id="home" class="text-white">
+    <!-- Containar -->
+    <div class="max-w-3xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8">
+
+    <!-- LEFT -->
+    <div class="md:w-1/2 w-full">
+        <img src="../images/home.png" alt="" width="240" class="headPhone w-48 sm:w-60 md:w-64 lg:w-[250px] mx-auto lg:mx-0"> 
+    </div>
+
+
+    <!-- Right -->
+    <div class="md:w-1/2 w-full headTxt text-center lg:text-left">
+        <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl leading-snug font-bold pl-10" style="color: rgba(255, 255, 250, 0.25);">On ear</h1>
+        <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug font-bold">Beats 3</p>
+        <p class="pt-8 pb-4 text-2xl leading-snug font-bold">OverView</p>
+        
+        <p class="pb-8 text-gray-300">Enjoy award-winning Beats sound with wireless listening freedom and a sleek, streamlined design with comfortable padded earphones, delivering first-rate playback.</p>
+
+        <div>
+            <button class="bg-white py-2 px-7 hover:opacity-70 transition-all duration-200 ease-in-out cursor-pointer rounded-2xl shadow-md shadow-gray-500 text-black">Add To Bag</button>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+</div>
+
+
+
+<!-- ============================================ -->
+<section class="py-40">
+    <!-- Containar -->
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-14 py-10">
+
+        <div>
+            <img src="../images/sponsor1.png" alt="" class="cardFD opacity-0 -translate-y-20 transition-all duration-300 w-44">
+        </div>
+
+
+        
+        <div>
+            <img src="../images/sponsor2.png" alt="" class="cardFD opacity-0 -translate-y-20 transition-all duration-300 w-44">
+        </div>
+
+
+
+        
+        <div>
+            <img src="../images/sponsor3.png" alt="" class="lg:pt-5 cardFD opacity-0 -translate-y-20 transition-all duration-300 w-44">
+        </div>
+
+
+
+        
+        <div>
+            <img src="../images/sponsor4.png" alt="" class="cardFD opacity-0 -translate-y-20 transition-all duration-300 w-44">
+        </div>
+
+
+    </div>
+</section>
+
+<!--============================ specs ===========================-->
+<section id="specs" class="">
+
+    <div>
+        <h1 class="text-center text-5xl lg:text-6xl xl:text-7xl leading-snug font-bold cardFD opacity-0 -translate-y-20 transition-all duration-500" style="color: rgba(255, 255, 250, 0.12);">Specs</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="max-w-xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center justify-between gap-10">
+
+        <!-- Left -->
+        <div class="w-full lg:w-1/2 flex flex-col text-white gap-6 text-center lg:text-left">
+
+            <div class="lg:pl-12 cardFL opacity-0 -translate-x-20 transition-all duration-500">
+                <i class="fab fa-bluetooth-b"></i>
+                <h4>Connection</h4>
+                <p class="text-gray-400">Bluetooth v5.2</p>
+            </div>
+
+            <div class="lg:pl-6 cardFL opacity-0 -translate-x-20 transition-all duration-500">
+                <i class="fas fa-battery-full text-white"></i>
+                <h4>Battery</h4>
+                <p class="text-gray-400">Duration 40h</p>
+            </div>
+
+            <div class="lg:pl-6 cardFL opacity-0 -translate-x-20 transition-all duration-500">
+                <i class="fas fa-bolt text-white"></i>
+                <h4>Load</h4>
+                <p class="text-gray-400">Fast charge 42-AAC</p>
+            </div>
+
+            <div class="lg:pl-12 cardFL opacity-0 -translate-x-20 transition-all duration-500">
+                <i class="fas fa-microphone text-white"></i>
+                <h4>Microphone</h4>
+                <p class="text-gray-400">Supports Apple Siri<br> and Google</p>
+            </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="w-full lg:w-1/2 flex justify-center cardFR opacity-0 translate-x-20 transition-all duration-500">
+            <img src="../images/specs.png" alt="" class="w-48 lg:w-64">
+        </div>
+
+    </div>
+</section>
+
+<!-- ===================================================== -->
+<section id="case" class="py-14">
+
+
+    <div>
+        <h1 class="text-center text-5xl lg:text-6xl xl:text-7xl leading-snug font-bold cardFD opacity-0 -translate-y-20 transition-all duration-500" style="color: rgba(255, 255, 250, 0.12);">Case</h1>
+    </div>
+
+    <!-- Containar -->
+    <div class="max-w-2xl mx-auto py-10 flex flex-col lg:flex-row items-center justify-center gap-8">
+
+        <!-- Left -->
+        <div class="md:w-1/2 w-full cardFD opacity-0 -translate-y-20 transition-all duration-500">
+            <img src="../images/case.png" alt="" class="w-56 md:w-64 lg:w-72 mx-auto lg:mx-0">
+        </div>
+
+
+        <!-- Right -->
+        <div class="md:w-1/2 w-full text-white cardFT opacity-0 translate-y-20 transition-all duration-500">
+            <p class="text-xl text-gray-300 text-center lg:text-left">With a comfortable and adaptable case so that you can store it whenever you want, and keep your durability forever.</p>
+
+            <div class="pt-4 text-center lg:text-left">
+                <button class="text-lg text-gray-300 hover:text-white transition-all duration-200 ease-in-out cursor-pointer">More Info ></button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================================================== -->
+<section class="py-20">
+    <!-- Container -->
+    <div class="max-w-4xl mx-auto py-14 bg-gray-950 flex flex-col md:flex-row items-center justify-center rounded-2xl shadow-md shadow-gray-300 px-8 gap-8">
+
+        <!-- Left -->
+        <div class="md:w-1/2 w-full text-white flex flex-col items-center md:items-start gap-4 cardFL opacity-0 -translate-x-20 transition-all duration-500">
+            <h1 class="text-xl max-w-sm sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-snug" style="font-family: var(--sniglet);">Immerse YourSelf In Your Music</h1>
+            <p class="text-md text-gray-200">Get It Now, Up To 50% Off</p>
+
+            <div>
+                <button class="bg-white py-2 px-7 text-lg text-black cursor-pointer leading-snug hover:opacity-70 hover:-translate-y-1.5 transition-all duration-200 ease-in-out rounded-2xl shadow-md shadow-gray-200">Shop Now</button>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="md:w-1/2 w-full flex justify-center cardFR opacity-0 translate-x-20 transition-all duration-500">
+            <img src="../images/discount.png" alt="" class="w-96">
+        </div>
+    </div>
+</section>  
+<!-- ======================================================= -->
+<section id="products" class="py-20">
+
+    <div class="text-center cardFD opacity-0 -translate-y-20 transition-all duration-300">]
+        <h1 class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug font-bold text-zinc-700">Choose <br><span class="text-zinc-800">Your Style</span></h1>
+    </div>
+
+    <!-- Containar -->
+    <div class="max-w-xl mx-auto text-white flex items-center justify-center flex-wrap gap-16 md:gap-12 py-20">
+
+        <!-- Card 1 -->
+        <div class="bg-zinc-900/70 w-[160px] h-[190px] pb-2 rounded-xl shadow-md shadow-gray-200 relative group overflow-visible cursor-pointer cardFL opacity-0 -translate-x-20 transition-all duration-500">
+            <div>
+                <img src="../images/product1.png" alt="" width="100" class="mx-auto -translate-y-8 group-hover:-translate-y-12 transition-all duration-200 ease-in">
+            </div>
+
+            <div class="flex items-center justify-between px-4">
+
+                <div class="">
+                    <h1>Black</h1>
+                    <p>200$</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Card 2 -->
+        <div class="bg-zinc-900/70 w-[160px] h-[190px] pb-2 rounded-xl shadow-md shadow-gray-200 relative group overflow-visible cursor-pointer cardFD opacity-0 -translate-y-20 transition-all duration-500">
+            <div>
+                <img src="../images/product2.png" alt="" width="100" class="mx-auto -translate-y-8 group-hover:-translate-y-12 transition-all duration-200 ease-in">
+            </div>
+
+            <div class="flex items-center justify-between px-4">
+
+                <div class="">
+                    <h1>Black Red</h1>
+                    <p>220$</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Card 3 -->
+        <div class="bg-zinc-900/70 w-[160px] h-[190px] pb-2 rounded-xl shadow-md shadow-gray-200 relative group overflow-visible cursor-pointer cardFR opacity-0 translate-x-20 transition-all duration-500">
+            <div>
+                <img src="../images/product3.png" alt="" width="100" class="mx-auto -translate-y-8 group-hover:-translate-y-12 transition-all duration-200 ease-in">
+            </div>
+
+            <div class="flex items-center justify-between px-4">
+
+                <div class="">
+                    <h1>Black Yellow</h1>
+                    <p>210$</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Card 4 -->
+        <div class="bg-zinc-900/70 w-[160px] h-[190px] pb-2 rounded-xl shadow-md shadow-gray-200 relative group overflow-visible cursor-pointer cardFL opacity-0 -translate-x-20 transition-all duration-500">
+            <div>
+                <img src="../images/product4.png" alt="" width="100" class="mx-auto -translate-y-8 group-hover:-translate-y-12 transition-all duration-200 ease-in">
+            </div>
+
+            <div class="flex items-center justify-between px-4">
+
+                <div class="">
+                    <h1>Blue</h1>
+                    <p>200$</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Card 5 -->
+        <div class="bg-zinc-900/70 w-[160px] h-[190px] pb-2 rounded-xl shadow-md shadow-gray-200 relative group overflow-visible cursor-pointer cardFD opacity-0 -translate-y-20 transition-all duration-500">
+            <div>
+                <img src="../images/product5.png" alt="" width="100" class="mx-auto -translate-y-8 group-hover:-translate-y-12 transition-all duration-200 ease-in">
+            </div>
+
+            <div class="flex items-center justify-between px-4">
+
+                <div class="">
+                    <h1>Gray</h1>
+                    <p>190$</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Card 6 -->
+        <div class="bg-zinc-900/70 w-[160px] h-[190px] pb-2 rounded-xl shadow-md shadow-gray-200 relative group overflow-visible cursor-pointer cardFR opacity-0 translate-x-20 transition-all duration-500">
+            <div>
+                <img src="../images/product1.png" alt="" width="100" class="mx-auto -translate-y-8 group-hover:-translate-y-12 transition-all duration-200 ease-in">
+            </div>
+
+            <div class="flex items-center justify-between px-4">
+
+                <div class="">
+                    <h1>Black</h1>
+                    <p>200$</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+        
+        
+    </div>
+</section>
+<!-- ===================================================== -->
+    <footer class="pt-20 border-solid border-t-2 border-white">
+    <!-- Container -->
+    <div class="max-w-6xl mx-auto py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-white px-12 cardFD opacity-0 -translate-y-20 transition-all duration-500">
+
+        <!-- Logo -->
+        <div class="flex items-start">
+        <img src="../images/logo.png" alt="Logo" class="max-w-[150px]">
+        </div>
+
+        <!-- Products -->
+        <div>
+        <h2 class="text-3xl font-bold leading-snug">Products</h2>
+        <ul class="pt-2 space-y-1">
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#home">Home</a></li>
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#specs">Specs</a></li>
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#case">Case</a></li>
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#products">Products</a></li>
+        </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+        <h2 class="text-3xl font-bold leading-snug">Support</h2>
+        <ul class="pt-2 space-y-1">
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#">Product Help</a></li>
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#">Register</a></li>
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#">Updates</a></li>
+            <li><a class="text-gray-300 inline-block hover:-translate-y-1.5 hover:text-white transition-all duration-200 ease-in text-lg" href="#">Provides</a></li>
+        </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="sm:col-span-2 lg:col-span-1">
+        <input
+            type="email"
+            name="txt"
+            placeholder="Enter Your Email..."
+            class="w-full h-[60px] p-3 outline-none border-2 border-white border-solid rounded-2xl bg-transparent text-white placeholder-gray-400 focus:border-amber-300 transition-all duration-300 ease-in-out focus:shadow-md focus:shadow-gray-400 focus:-translate-y-1"
+        >
+        <div class="pt-3">
+            <button class="bg-amber-300 py-2 px-6 hover:opacity-70 hover:-translate-y-1.5 transition-all duration-200 ease-in text-lg flex items-center justify-center rounded-2xl shadow-md shadow-gray-200 cursor-pointer text-black font-semibold">
+            Send
+            </button>
+        </div>
+        </div>
+
+    </div>
+    </footer>
+<!--================ Main Js ===================-->
+<script src="main.js"></script>
+</body>
+</html>

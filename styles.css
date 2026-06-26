@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+.hero-bg {
+    background-color: #000000;
+    background-image: radial-gradient(circle at 40% 60%, rgba(255,255,255,0.08), transparent 60%);
+}
+
+.headPhone{
+    animation: fromTop 1.7s ease forwards;
+}
+
+
+.headTxt{
+    animation: fromDown 1.7s ease forwards;
+}
+
+
+@keyframes fromTop{
+    from{
+        transform: translateY(250px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+
+
+@keyframes fromDown{
+    from{
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+.bgGray{
+    background-color: #0E0E0E;
+}
+
+.trans{
+    background-color: transparent;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
